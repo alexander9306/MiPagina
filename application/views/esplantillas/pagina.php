@@ -668,9 +668,19 @@
 <!-- Jquery Zoom Js -->
 <script src="./static/js/jquery.zoom.min.js"></script>
 <script>
+function is_touch_device() {  
+  try {  
+    document.createEvent("TouchEvent");  
+    return true;  
+  } catch (e) {  
+    return false;  
+  }  
+}
   $(document).ready(function(){
+    if(!is_touch_device()){
         $('#pt1').zoom({ on:'click',magnify: 0.85});
         $('#pt2').zoom({ on:'click',magnify: 0.85});
+    }
   });
 </script>
 
