@@ -666,7 +666,7 @@
 
 
 <!-- Jquery Zoom Js -->
-<script src="./static/js/jquery.zoom.js"></script>
+<script src="./static/js/jquery.zoom.min.js"></script>
 <script>
   $(document).ready(function(){
         $('#pt1').zoom({ on:'click',magnify: 0.85});
